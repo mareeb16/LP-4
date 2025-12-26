@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #0a0a0a; /* dark cinema vibe */
+    color: #fff;
+    overflow-y: scroll;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#ff00ff, #ff9900);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1c1c1c;
+}
+
+/* Navbar */
+nav {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 18px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav h2 {
+    color: #ff00ff;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    cursor: pointer;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(120deg, #1a1a1a, #2c003e);
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff00ff;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-text button {
+    padding: 14px 40px;
+    background: linear-gradient(135deg, #ff00ff, #ff9900);
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.hero img {
+    width: 420px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(255,0,255,0.3);
+}
+
+/* Features */
+.features {
+    padding: 90px 60px;
+    background: #1c1c1c;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+.feature-card {
+    background: #2c003e;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(255,0,255,0.2);
+}
+
+.feature-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+/* Gallery */
+.gallery {
+    padding: 80px 60px;
+    background: #0f0f0f;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 18px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.07);
+}
+
+/* Footer */
+footer {
+    background: #2c003e;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    color: #ff00ff;
+}
